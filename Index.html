@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+< html  lang =" en " >
+< head >
+    < meta  charset =" UTF-8 " >
+    < title > Front-end interview questions collection-by paddingme </ title >
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge,chrome=1 "/>
+    < meta  name =" keywords " content =" interview, resume, frontend, front-end interview questions, front-end written test questions, front-end development, front-end, front-end engineer, written test, interview, resume, job search " >
+    < meta  name =" description " content ="A collection of front-end interview questions, including front-end written test questions, interviews, resumes and other knowledge reserves for job hunting " >
+    < meta  name =" viewport "
+          content =" width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 " >
+    < link  rel =" stylesheet " href =" //unpkg.com/docsify/lib/themes/vue.css " >
+    < link  rel =" apple-touch-icon " sizes =" 57x57 " href =" /_media/apple-icon-57x57.png " >
+    < link  rel =" apple-touch-icon " sizes =" 60x60 " href =" /_media//apple-icon-60x60.png " >
+    < link  rel =" apple-touch-icon " sizes =" 72x72 " href =" /_media//apple-icon-72x72.png " >
+    < link  rel =" apple-touch-icon " sizes =" 76x76 " href =" /_media//apple-icon-76x76.png " >
+    < link  rel =" apple-touch-icon " sizes =" 114x114 " href =" /_media//apple-icon-114x114.png " >
+    < link  rel =" apple-touch-icon " sizes =" 120x120 " href =" /_media//apple-icon-120x120.png " >
+    < link  rel =" apple-touch-icon " sizes =" 144x144 " href =" /_media//apple-icon-144x144.png " >
+    < link  rel =" apple-touch-icon " sizes =" 152x152 " href =" /_media//apple-icon-152x152.png " >
+    < link  rel =" apple-touch-icon " sizes =" 180x180 " href =" /_media//apple-icon-180x180.png " >
+    < link  rel =" icon " type =" image/png " sizes =" 192x192 " href =" /_media//android-icon-192x192.png " >
+    < link  rel =" icon " type =" image/png " sizes =" 32x32 " href =" /_media//favicon-32x32.png " >
+    < link  rel =" icon " type =" image/png " sizes =" 96x96 " href =" /_media//favicon-96x96.png " >
+    < link  rel =" icon " type =" image/png " sizes =" 16x16 " href =" /_media//favicon-16x16.png " >
+    < link  rel =" manifest " href =" /_media//manifest.json " >
+    < meta  name =" msapplication-TileColor " content =" #ffffff " >
+    < meta  name =" msapplication-TileImage " content =" /_media//ms-icon-144x144.png " >
+    < meta  name =" theme-color " content =" #ffffff " >
+</ head >
+< body >
+< nav >
+    < A  the href = " # / Questions / " > T questions </ A >
+    < A  the href = " # / Interview / " > surface was </ A >
+    < A  the href = " # / Resume / " > Resume </ A >
+</ nav >
+< div  id =" app " >
+    < h1 > Front-end interview questions collection </ h1 >
+    < H2 > < A  the href = " # / Questions / " > front end face questions developed </ A > </ H2 >
+    < H2 > < A  the href = " # / Interview / " > front end surface of the development by </ A > </ H2 >
+    < H2 > < A  the href = " # / Questions / " > front-end development Resume </ A > </ H2 >
+</ div >
+</ body >
+< script >
+    window . $docsify  =  {
+        loadSidebar : true ,
+        repo : 'https : //github.com/paddingme/Front-end-Web-Development-Interview-Question' ,
+        subMaxLevel : 2 ,
+        maxLevel : 2 ,
+        mergeNavbar : true ,
+        formatUpdated : '{MM}/{DD} {HH}:{mm}' ,
+        ga : 'UA-50048801-2' ,
+// codesponsor:'id',
+        search : {
+            maxAge : 86400000 ,  // Expiration time, in milliseconds, one day by default
+// paths: auto, // or'auto'
+            placeholder : 'search' ,
+            noData : 'No result found!' ,
+            // The maximum level of the search title, 1-6
+// depth: 3
+        } ,
+        plugins : [
+            function ( hook ,  vm )  {
+                hook . beforeEach ( function ( html )  {
+                    var  url  =  'https:  //github.com/paddingme/Front-end-Web-Development-Interview-Question/blob/master/ ' +  vm . route . file
+                    var  editHtml  =  '<p style="text-align: right">:pencil2: [Edit this page document on Github]('  +  url  +  ')</p>\n'
+
+                    return  html
+                        // +'\n----\n'
+                        // +'Last updated in {docsify-updated} '
+                        +  editHtml
+                } )
+
+                var  footer  =  [
+                    '<hr/>' ,
+                    '<footer>' ,
+                    '<span><a href="https://github.com/paddingme">PaddingMe</a> ©2017.</span>' ,
+                    '<span>Proudly published with <a href="https://github.com/QingWei-Li/docsify" target="_blank">docsify</a>.</span>' ,
+                    '</footer>'
+                ] . join ( '' )
+
+                hook . afterEach ( function ( html )  {
+                    return  html  +  footer
+                } )
+            }
+        ]
+    }
+</ script >
+< script  src =" //unpkg.com/docsify/lib/docsify.min.js " > </ script >
+< script  src =" //unpkg.com/docsify/lib/plugins/search.js " > </ script >
+< script  src =" //unpkg.com/docsify/lib/plugins/ga.js " > </ script >
+<!--<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>-->
+<!--<script src="//unpkg.com/docsify/lib/plugins/codesponsor.min.js"></script>-->
+< script >
+    if  ( typeof  navigator . serviceWorker  !==  'undefined' )  {
+        navigator . serviceWorker . register ( 'sw.js' )
+    }
+</ script >
+</ html >
